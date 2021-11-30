@@ -1,13 +1,21 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let splitWord = word.split("")
+  let reverseWordArray = splitWord.reverse()
+  let joinArray = reverseWordArray.join("")
+  return (joinArray === word ? true : false )
+  
+  
 }
 
 /* 
-  Add your pseudocode here
+ declare a string called testString
+ read the string right to left, and left to right. 
+ if both reads are the same, return true. if not return false.
 */
 
 /*
-  Add written explanation of your solution here
+ function that has 1 argument(string). this function determines if that string is a palindrome by
+ returning true of false
 */
 
 // You can run `node index.js` to view these console logs
